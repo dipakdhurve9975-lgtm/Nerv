@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NERV · Run a digital office of AI workers</title>
+  <meta name="description" content="NERV plans, acts and asks for approval — a Manager Agent and its Worker Agents doing real business tasks through real tools, controlled from a web dashboard or Telegram.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span>NERV</span>
+      </a>
+      <nav class="nav-links" id="main-nav">
+        <a href="#loop">Architecture</a>
+        <a href="#team">Agents</a>
+        <a href="#telegram">Telegram</a>
+        <a href="#overview">Overview</a>
+        <a href="#security">Security</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle theme"></button>
+        <a class="btn btn-primary btn-sm" href="download.html">Download</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero hero-nerv">
+      <div class="container">
+        <p class="hero-tag">MANAGER + WORKER AGENTS &middot; TOOL USE &middot; HUMAN-IN-THE-LOOP</p>
+        <h1>Run a digital office of AI workers.</h1>
+        <p class="hero-sub">Give it a goal — &ldquo;chase overdue invoices&rdquo; — and it plans the steps, does them with real tools, asks you before anything risky, and adapts when something breaks. One manager, several workers, controlled from your laptop or your phone.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary btn-lg" href="download.html">&#8683; Download NERV</a>
+          <a class="btn btn-secondary btn-lg" href="#loop">See the architecture &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- The agent loop -->
+    <section class="section" id="loop">
+      <div class="container">
+        <p class="section-eyebrow">Not a chatbot.</p>
+        <h2>A loop that keeps calling itself until the goal is done.</h2>
+        <p class="section-lead">Perceive &middot; plan &middot; act &middot; observe &middot; re-plan &middot; escalate. It's a program that keeps calling the AI in a cycle, with real actions happening in between — not one giant AI call.</p>
+        <div class="media-frame classic-frame">
+          <div class="terminal-window">
+            <div class="terminal-bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="terminal-title">manager &mdash; goal: chase overdue invoices</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="prompt">nerv$</span> perceive</p>
+              <p><span class="dim">manager:&nbsp;</span>5 overdue accounts found. 2 exceed &#8377;50,000.</p>
+              <p><span class="prompt">nerv$</span> plan &amp; dispatch workers</p>
+              <p><span class="ok">[ok]</span> data &middot; finance &middot; comms &mdash; running in parallel</p>
+              <p><span class="prompt">nerv$</span> observe</p>
+              <p><span class="dim">data agent:&nbsp;</span>1 record missing a contact email &mdash; flagging, continuing with the rest.</p>
+              <p><span class="prompt">nerv$</span> escalate</p>
+              <div class="tg-bot"></div>
+            </div>
+          </div>
+        </div>
+        <p class="media-caption">A failure doesn't stop the run. It gets noticed, flagged, and the loop continues.</p>
+      </div>
+    </section>
+
+    <!-- Team structure -->
+    <section class="section section-alt" id="team">
+      <div class="container">
+        <p class="section-eyebrow">The team.</p>
+        <h2>One manager. A few focused workers. Not one giant AI.</h2>
+        <p class="section-lead">Each worker has a small, focused job — fewer mistakes, cheaper to run, and if one fails, only that piece needs re-planning.</p>
+        <div class="chibi-floor" id="chibi-floor">
+          <div class="chibi" data-name="manager">
+            <span class="chibi-bubble"></span>
+            <span class="chibi-emoji" aria-hidden="true">&#129504;</span>
+            <span class="chibi-tag">Manager Agent</span>
+          </div>
+          <div class="chibi" data-name="data">
+            <span class="chibi-bubble"></span>
+            <span class="chibi-emoji" aria-hidden="true">&#128202;</span>
+            <span class="chibi-tag">Data Agent</span>
+          </div>
+          <div class="chibi" data-name="finance">
+            <span class="chibi-bubble"></span>
+            <span class="chibi-emoji" aria-hidden="true">&#128176;</span>
+            <span class="chibi-tag">Finance Agent</span>
+          </div>
+          <div class="chibi" data-name="comms">
+            <span class="chibi-bubble"></span>
+            <span class="chibi-emoji" aria-hidden="true">&#9993;&#65039;</span>
+            <span class="chibi-tag">Comms Agent</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dashboard -->
+    <section class="section" id="dashboard">
+      <div class="container">
+        <p class="section-eyebrow">The dashboard.</p>
+        <h2>Watch the plan happen, live.</h2>
+        <p class="section-lead">Agent cards, a live reasoning log, an approval queue and a full audit trail — from a web dashboard, or straight from Telegram.</p>
+        <div class="media-frame pro-frame">
+          <div class="app-window">
+            <aside class="app-sidebar">
+              <div class="app-logo">N</div>
+              <div class="app-nav"><span class="active">Office</span><span>Inbox</span><span>Tasks</span><span>Automations</span><span>Audit log</span></div>
+            </aside>
+            <div class="app-main">
+              <div class="app-head">Orchestrator</div>
+              <div class="agent-cards">
+                <div class="agent-card"><span class="agent-avatar">M</span><span>Manager Agent</span><span class="ok">online</span></div>
+                <div class="agent-card"><span class="agent-avatar">D</span><span>Data Agent</span><span class="ok">online</span></div>
+                <div class="agent-card"><span class="agent-avatar">F</span><span>Finance Agent</span><span class="dim">waiting</span></div>
+              </div>
+              <div class="app-tasks">
+                <div class="task"><span class="task-box"></span> Draft 5 collection emails <span class="pill pill-new">New</span></div>
+                <div class="task"><span class="task-box checked"></span> Check overdue accounts <span class="ok">done</span></div>
+                <div class="task"><span class="task-box"></span> Approve 2 invoices &gt; &#8377;50,000 <span class="pill pill-soon">Needs you</span></div>
+              </div>
+            </div>
+            <div class="tg-bot"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools -->
+    <section class="section section-alt" id="tools">
+      <div class="container">
+        <h2>Five tools, one sandbox.</h2>
+        <p class="section-lead">The AI has no magic computer access. We give it a menu of functions it's allowed to call, and each call runs inside a sandboxed container — real actions, safely boxed in.</p>
+        <div class="provider-grid">
+          <span class="provider">read_spreadsheet</span>
+          <span class="provider">send_email</span>
+          <span class="provider">query_database</span>
+          <span class="provider">request_approval</span>
+          <span class="provider">run_shell_command</span>
+        </div>
+        <p class="section-note"><span class="pill pill-new">Routed</span> Simple steps go to a small, cheap model. Planning goes to a bigger one — most agent steps are lookups, not deep reasoning, so this alone cuts cost sharply.</p>
+      </div>
+    </section>
+
+    <!-- Telegram -->
+    <section class="section" id="telegram">
+      <div class="container">
+        <p class="section-eyebrow">Control it from your phone.</p>
+        <h2>Approve from Telegram. Same backend as the web.</h2>
+        <p class="section-lead">The Telegram bot is just another input channel to the Manager Agent — not new logic. When a worker needs approval, it lands in your chat with buttons.</p>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3><span class="feature-icon">&#128276;</span> Gets pinged.</h3>
+            <p>Anything risky — money, external emails, deleting data — pauses and messages you first.</p>
+          </div>
+          <div class="feature-card">
+            <h3><span class="feature-icon">&#9989;</span> Approve or reject.</h3>
+            <p>Inline buttons right in the chat. Tap once, the run continues.</p>
+          </div>
+          <div class="feature-card">
+            <h3><span class="feature-icon">&#9881;&#65039;</span> Manual or auto.</h3>
+            <p>Manual mode asks before every action. Auto mode only stops for the high-stakes stuff.</p>
+          </div>
+          <div class="feature-card">
+            <h3><span class="feature-icon">&#128203;</span> Logged either way.</h3>
+            <p>Every tap, every approval, timestamped in the same audit trail as the web dashboard.</p>
+          </div>
+        </div>
+
+        <div class="tg-hero">
+          <div class="tg-logo" aria-hidden="true">
+            <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="120" cy="120" r="120" fill="#29a9eb"/>
+              <path d="M54 122l125-48c6-2 11 1 9 10l-21 100c-2 8-7 10-14 6l-38-28-18 17c-2 2-4 3-7 3l3-38 69-62c3-3-1-4-4-2l-85 54-37-12c-8-3-8-8 1-11z" fill="#fff"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="shot-grid shot-grid-single">
+          <figure>
+            <div class="media-frame shot"><div class="shot-transcript">[14:02] NERV Bot: 2 invoices need approval (&#8377;68,400 total)<br>[14:02] You: tapped &#9989; Approve<br>[14:03] NERV Bot: &#9989; Done. 4 emails sent, 1 flagged for review.</div></div>
+            <figcaption>An approval, handled from your pocket.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cost edge -->
+    <section class="section section-alt" id="edge">
+      <div class="container">
+        <p class="section-eyebrow">Why it's cheap.</p>
+        <h2>Same office, a fraction of the tokens.</h2>
+        <p class="section-lead">Most agents burn tokens by throwing everything at one expensive model, sequentially. NERV doesn't.</p>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3><span class="feature-icon">&#128268;</span> Model routing.</h3>
+            <p>Small model for easy lookups, bigger model for planning. Cuts cost 60&ndash;80% on most agent steps.</p>
+          </div>
+          <div class="feature-card">
+            <h3><span class="feature-icon">&#128190;</span> Prompt caching.</h3>
+            <p>Shared system instructions and context are cached, not re-sent on every worker call.</p>
+          </div>
+          <div class="feature-card">
+            <h3><span class="feature-icon">&#129504;</span> Code over AI calls.</h3>
+            <p>Deterministic steps run as plain code. The AI is only called when a real judgment call is needed.</p>
+          </div>
+          <div class="feature-card">
+            <h3><span class="feature-icon">&#9889;</span> Parallel workers.</h3>
+            <p>Independent agents run at the same time instead of waiting on each other in one long chain.</p>
+          </div>
+          <div class="feature-card">
+            <h3><span class="feature-icon">&#128193;</span> Shared memory.</h3>
+            <p>A lightweight shared store means agents stop re-explaining context to each other.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What you get -->
+    <section class="section" id="overview">
+      <div class="container">
+        <h2>What you get.</h2>
+        <div class="matrix-grid">
+          <div class="matrix-card">
+            <span class="pill pill-free">Core</span>
+            <h3>Manager + Worker agents.</h3>
+            <p>Like a mini company, not one giant AI call. Each worker knows only its own job.</p>
+          </div>
+          <div class="matrix-card">
+            <span class="pill pill-free">Core</span>
+            <h3>Real tool use.</h3>
+            <p>Spreadsheets, email, a database, a sandboxed shell &mdash; real actions, not guesses.</p>
+          </div>
+          <div class="matrix-card">
+            <span class="pill pill-pro">Safety</span>
+            <h3>The approval gate.</h3>
+            <p>Every risky action pauses for a human first, on the web or on Telegram.</p>
+          </div>
+          <div class="matrix-card">
+            <span class="pill pill-pro">Control</span>
+            <h3>Web dashboard + Telegram.</h3>
+            <p>One backend, two front doors. Approve from your phone, watch from your laptop.</p>
+          </div>
+          <div class="matrix-card">
+            <span class="pill pill-teams">Efficiency</span>
+            <h3>Cost-routed models.</h3>
+            <p>Cheap model for lookups, bigger model for planning. Cached context, parallel workers.</p>
+          </div>
+          <div class="matrix-card">
+            <span class="pill pill-coming">Coming</span>
+            <h3>Voice control.</h3>
+            <p>Talk to your office instead of typing to it. No date yet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Security -->
+    <section class="section section-alt" id="security">
+      <div class="container">
+        <p class="section-eyebrow">Private by architecture. Not just by promise.</p>
+        <h2>An agent is only trustworthy if you control where it runs and who reads its mail.</h2>
+        <div class="feature-grid security-grid">
+          <div class="feature-card">
+            <h3><span class="feature-icon">&#128187;</span> Local first.</h3>
+            <p>Every agent runs on your machine, under your own keys.</p>
+          </div>
+          <div class="feature-card">
+            <h3><span class="feature-icon">&#128274;</span> Sealed per device.</h3>
+            <p>Messages are encrypted for the one device that opens them.</p>
+          </div>
+          <div class="feature-card">
+            <h3><span class="feature-icon">&#128179;</span> Nothing on the wire that can bill you.</h3>
+            <p>Keys and prompts never leave your machines.</p>
+          </div>
+          <div class="feature-card">
+            <h3><span class="feature-icon">&#128737;&#65039;</span> Sandboxed.</h3>
+            <p>Every worker runs inside its own disposable container &mdash; a restricted box, not the real OS.</p>
+          </div>
+        </div>
+
+        <div class="wire-demo">
+          <div class="wire-panel wire-off">
+            <h4>ON THE WIRE. WHAT ANYONE IN BETWEEN SEES</h4>
+            <p><span class="t">14:02:03</span> manager &rarr; data agent &middot; 1.2 KB &middot; X25519 sealed box &middot; XChaCha20 &middot; Ed25519+b64</p>
+            <p><span class="t">14:02:04</span> data agent &rarr; manager &middot; 0.8 KB &middot; X25519 sealed box &middot; XChaCha20 &middot; Ed25519+b64</p>
+            <p><span class="t">14:02:41</span> finance agent &rarr; comms agent &middot; 2.1 KB &middot; X25519 sealed box &middot; XChaCha20 &middot; Ed25519+b64</p>
+            <p class="dim">&#10067; gibberish &middot; sealed &middot; ciphertext &middot; nothing to bill</p>
+          </div>
+          <div class="wire-panel wire-in">
+            <h4>INSIDE YOUR NODE. WHAT THE MANAGER SEES</h4>
+            <p><span class="t">14:02:03</span> <strong>manager:</strong> &ldquo;5 overdue accounts, 2 over the approval limit.&rdquo;</p>
+            <p><span class="t">14:02:04</span> <strong>data agent:</strong> &ldquo;Records pulled, one is missing a contact.&rdquo;</p>
+            <p class="takeaway">Sealed on the way out. Opened where it lands. <strong>Keys never leave your machines.</strong></p>
+          </div>
+        </div>
+
+        <p class="section-note">What we count: buckets and fixed words only, no prompts, no messages. Do Not Track turns it off.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container container-narrow">
+        <h2>Questions people actually ask.</h2>
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>Isn't this just a chatbot with extra steps?</summary>
+            <div class="faq-body"><p>No &mdash; a chatbot answers once and stops. NERV loops: perceive, plan, act, observe, re-plan, escalate, repeat, until the goal is actually done, with real tool calls happening in between.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>What happens when a step fails mid-run?</summary>
+            <div class="faq-body"><p>The Manager Agent notices, decides whether to skip, retry, or flag it for you, and continues with the rest of the plan instead of stopping the whole run.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Who approves the risky stuff?</summary>
+            <div class="faq-body"><p>You do. In manual mode every action waits for a thumbs up; in auto mode only high-stakes actions &mdash; money, external emails, deleting data &mdash; pause for approval, on the web or on Telegram.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Which tools can it actually use?</summary>
+            <div class="faq-body"><p>Five today: reading spreadsheets, sending email, querying a database, requesting approval, and running shell commands inside a sandboxed container. Nothing runs outside that box.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Is my data private?</summary>
+            <div class="faq-body"><p>Local first. Messages between agents are sealed per device with X25519 sealed boxes and XChaCha20, signed with Ed25519. Keys never leave your machines.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section cta-band">
+      <div class="container">
+        <h2>Clock in your office.</h2>
+        <p>You do the work only you can do. The office does the rest.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary btn-lg" href="download.html">Download NERV</a>
+          <a class="btn btn-primary-outline btn-lg" href="#loop">See the architecture</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-brand">NERV</p>
+      <p class="footer-copy">&copy; 2026 NERV.</p>
+      <div class="footer-links">
+        <a href="#security">Security</a><a href="#">License</a><a href="#">Terms</a><a href="#">Privacy</a><a href="download.html">Download</a><a href="#">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

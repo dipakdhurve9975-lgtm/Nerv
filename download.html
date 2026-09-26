@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Download NERV</title>
+
+  <meta
+    name="description"
+    content="Download NERV for Windows, macOS or Linux — the same office, the same backend, on every platform."
+  >
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="site-header">
+
+    <div class="container nav-row">
+
+      <a class="brand" href="index.html#top">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span>NERV</span>
+      </a>
+
+      <nav class="nav-links" id="main-nav">
+        <a href="index.html#loop">Architecture</a>
+        <a href="index.html#team">Agents</a>
+        <a href="index.html#telegram">Telegram</a>
+        <a href="index.html#overview">Overview</a>
+        <a href="index.html#security">Security</a>
+      </nav>
+
+      <div class="nav-actions">
+
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Toggle light and dark theme"
+          title="Toggle theme">
+        </button>
+
+        <a class="btn btn-primary btn-sm" href="download.html">
+          Download
+        </a>
+
+      </div>
+
+      <button
+        class="nav-toggle"
+        id="nav-toggle"
+        aria-label="Toggle menu"
+        aria-expanded="false">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
+
+    </div>
+
+  </header>
+
+
+  <!-- ================= MAIN ================= -->
+
+  <main id="top">
+
+    <!-- HERO -->
+
+    <section
+      class="hero hero-nerv"
+      style="padding-bottom: 40px;">
+
+      <div class="container">
+
+        <p class="hero-tag">
+          ONE BUILD &middot; THREE PLATFORMS
+        </p>
+
+        <h1>
+          Download NERV.
+        </h1>
+
+        <p class="hero-sub">
+          Same backend, same office, wherever you run it.
+          Pick your platform below — we've already guessed
+          which one you need.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= DOWNLOAD CARDS ================= -->
+
+    <section
+      class="section"
+      style="padding-top: 24px;">
+
+      <div class="container">
+
+        <div class="pricing-grid" id="os-grid">
+
+
+          <!-- ================= WINDOWS ================= -->
+
+          <div
+            class="price-card"
+            data-os="windows">
+
+            <!-- Badge will be added automatically by JavaScript -->
+
+            <span
+              class="pill pill-free os-badge"
+              hidden>
+            </span>
+
+            <h3>
+              Windows
+            </h3>
+
+            <p class="price">
+              <span
+                class="amount"
+                style="font-size:16px;">
+                .exe installer
+              </span>
+            </p>
+
+            <ul>
+
+              <li>
+                Windows 10 and 11, 64-bit
+              </li>
+
+              <li>
+                Sandboxed workers via a restricted shell
+              </li>
+
+              <li>
+                Same dashboard, same Telegram control
+              </li>
+
+            </ul>
+
+            <a
+              class="btn btn-secondary"
+              href="#"
+              data-download="windows">
+
+              Download for Windows
+
+            </a>
+
+          </div>
+
+
+          <!-- ================= MACOS ================= -->
+
+          <div
+            class="price-card"
+            data-os="mac">
+
+            <!-- Badge will be added automatically by JavaScript -->
+
+            <span
+              class="pill pill-free os-badge"
+              hidden>
+            </span>
+
+            <h3>
+              macOS
+            </h3>
+
+            <p class="price">
+              <span
+                class="amount"
+                style="font-size:16px;">
+                .dmg installer
+              </span>
+            </p>
+
+            <ul>
+
+              <li>
+                Apple Silicon and Intel
+              </li>
+
+              <li>
+                Sandboxed workers via Docker
+              </li>
+
+              <li>
+                Same dashboard, same Telegram control
+              </li>
+
+            </ul>
+
+            <a
+              class="btn btn-secondary"
+              href="#"
+              data-download="mac">
+
+              Download for macOS
+
+            </a>
+
+          </div>
+
+
+          <!-- ================= LINUX ================= -->
+
+          <div
+            class="price-card"
+            data-os="linux">
+
+            <!-- Badge will be added automatically by JavaScript -->
+
+            <span
+              class="pill pill-free os-badge"
+              hidden>
+            </span>
+
+            <h3>
+              Linux
+            </h3>
+
+            <p class="price">
+              <span
+                class="amount"
+                style="font-size:16px;">
+                .AppImage
+              </span>
+            </p>
+
+            <ul>
+
+              <li>
+                Most modern distros, x86_64
+              </li>
+
+              <li>
+                Sandboxed workers via Docker
+              </li>
+
+              <li>
+                Same dashboard, same Telegram control
+              </li>
+
+            </ul>
+
+            <a
+              class="btn btn-secondary"
+              href="#"
+              data-download="linux">
+
+              Download for Linux
+
+            </a>
+
+          </div>
+
+
+        </div>
+
+
+        <!-- ================= OS DETECTION MESSAGE ================= -->
+
+        <p
+          class="section-note"
+          id="os-note">
+
+          Detecting your platform&hellip;
+
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="site-footer">
+
+    <div class="container">
+
+      <p class="footer-brand">
+        NERV
+      </p>
+
+      <p class="footer-copy">
+        &copy; 2026 NERV.
+      </p>
+
+      <div class="footer-links">
+
+        <a href="index.html#security">
+          Security
+        </a>
+
+        <a href="#">
+          License
+        </a>
+
+        <a href="#">
+          Terms
+        </a>
+
+        <a href="#">
+          Privacy
+        </a>
+
+        <a href="download.html">
+          Download
+        </a>
+
+        <a href="#">
+          Contact
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- ================= MAIN SCRIPT ================= -->
+
+  <script src="script.js"></script>
+
+
+  <!-- ================= OS DETECTION ================= -->
+
+  <script>
+
+    (function () {
+
+      /*
+       * Detect user's operating system
+       */
+      function detectOS() {
+
+        var ua = navigator.userAgent || "";
+        var platform = navigator.platform || "";
+
+        /*
+         * Windows
+         */
+        if (
+          /Windows/i.test(ua) ||
+          /Win/i.test(platform)
+        ) {
+          return "windows";
+        }
+
+
+        /*
+         * macOS
+         */
+        if (
+          /Macintosh/i.test(ua) ||
+          /Mac OS X/i.test(ua) ||
+          /Mac/i.test(platform)
+        ) {
+          return "mac";
+        }
+
+
+        /*
+         * Linux
+         */
+        if (
+          /Linux/i.test(ua) ||
+          /X11/i.test(platform)
+        ) {
+          return "linux";
+        }
+
+
+        /*
+         * Unknown operating system
+         */
+        return null;
+
+      }
+
+
+      /*
+       * Get detected OS
+       */
+      var os = detectOS();
+
+
+      /*
+       * Get page elements
+       */
+      var note = document.getElementById("os-note");
+
+      var cards = document.querySelectorAll(
+        "#os-grid .price-card"
+      );
+
+
+      /*
+       * Reset all cards
+       */
+      cards.forEach(function (card) {
+
+        card.classList.remove(
+          "featured-price"
+        );
+
+
+        /*
+         * Hide badge
+         */
+        var badge =
+          card.querySelector(".os-badge");
+
+        if (badge) {
+
+          badge.hidden = true;
+
+          badge.textContent = "";
+
+        }
+
+
+        /*
+         * Reset download button text
+         */
+        var button =
+          card.querySelector("[data-download]");
+
+        if (button) {
+
+          var cardOS =
+            card.dataset.os;
+
+          if (cardOS === "windows") {
+
+            button.textContent =
+              "Download for Windows";
+
+          }
+
+          else if (cardOS === "mac") {
+
+            button.textContent =
+              "Download for macOS";
+
+          }
+
+          else if (cardOS === "linux") {
+
+            button.textContent =
+              "Download for Linux";
+
+          }
+
+        }
+
+      });
+
+
+      /*
+       * Highlight detected OS
+       */
+      if (os) {
+
+        cards.forEach(function (card) {
+
+          if (card.dataset.os === os) {
+
+            /*
+             * Add featured styling
+             */
+            card.classList.add(
+              "featured-price"
+            );
+
+
+            /*
+             * Show recommendation badge
+             */
+            var badge =
+              card.querySelector(".os-badge");
+
+            if (badge) {
+
+              badge.hidden = false;
+
+              badge.textContent =
+                "Recommended for you";
+
+            }
+
+
+            /*
+             * Change button text
+             */
+            var button =
+              card.querySelector(
+                "[data-download]"
+              );
+
+            if (button) {
+
+              button.textContent =
+                "Download for your OS";
+
+            }
+
+          }
+
+        });
+
+
+        /*
+         * OS name for message
+         */
+        var osName;
+
+
+        if (os === "windows") {
+
+          osName = "Windows";
+
+        }
+
+        else if (os === "mac") {
+
+          osName = "macOS";
+
+        }
+
+        else {
+
+          osName = "Linux";
+
+        }
+
+
+        /*
+         * Show detection message
+         */
+        if (note) {
+
+          note.textContent =
+            "You're using " +
+            osName +
+            " — we've recommended the right build for you.";
+
+        }
+
+      }
+
+
+      /*
+       * Unknown OS
+       */
+      else {
+
+        if (note) {
+
+          note.textContent =
+            "Couldn't detect your platform — choose the appropriate build below.";
+
+        }
+
+      }
+
+    })();
+
+  </script>
+
+</body>
+
+</html>
